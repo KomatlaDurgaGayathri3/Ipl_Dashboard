@@ -1,0 +1,69 @@
+.home-container {
+  min-height: 100vh;
+  padding: 35px 20px 60px;
+  background-image: linear-gradient(160deg, #a4261d, #1e293b);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.dashboard-heading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 0 auto 35px;
+}
+
+.dashboard-heading h1 {
+  font-size: 36px;
+  margin: 0;
+}
+
+.ipl-logo {
+  width: 55px;
+  height: 55px;
+  object-fit: contain;
+}
+
+.teams-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 22px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+
+.error-container {
+  text-align: center;
+  padding: 30px;
+}
+
+.error-container button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  background: white;
+  color: #a4261d;
+}
+
+@media (max-width: 576px) {
+  .home-container {
+    padding: 25px 15px;
+  }
+
+  .dashboard-heading h1 {
+    font-size: 27px;
+  }
+
+  .ipl-logo {
+    width: 42px;
+    height: 42px;
+  }
+
+  .teams-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}

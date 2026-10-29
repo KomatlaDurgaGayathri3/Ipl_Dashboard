@@ -1,0 +1,82 @@
+.latest-match {
+  width: 100%;
+  max-width: 1000px;
+  margin: 25px auto;
+}
+
+.latest-match-title {
+  margin-bottom: 18px;
+  font-size: 24px;
+}
+
+.latest-match-card {
+  padding: 25px;
+  border-radius: 12px;
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+.latest-match-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.match-team-info h3 {
+  font-size: 25px;
+  margin-top: 0;
+}
+
+.match-team-info p {
+  line-height: 1.5;
+}
+
+.latest-opponent-logo {
+  width: 130px;
+  height: 130px;
+  object-fit: contain;
+}
+
+.match-divider {
+  margin: 22px 0;
+  border: 0;
+  border-top: 1px solid #ffffff40;
+}
+
+.latest-match-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 25px;
+}
+
+.latest-match-details h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+
+.latest-match-details p {
+  margin-top: 0;
+  line-height: 1.5;
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 576px) {
+  .latest-match-card {
+    padding: 16px;
+  }
+
+  .latest-opponent-logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .match-team-info h3 {
+    font-size: 19px;
+  }
+
+  .latest-match-details {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+}

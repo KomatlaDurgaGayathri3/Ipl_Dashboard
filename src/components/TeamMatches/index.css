@@ -1,0 +1,69 @@
+.team-matches-container {
+  min-height: 100vh;
+  padding: 25px 20px 50px;
+  background-image: linear-gradient(to bottom, #a4261d, #1e293b);
+  background-size: cover;
+  color: #ffffff;
+}
+
+.team-banner {
+  display: block;
+  width: 100%;
+  max-width: 1000px;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 0 auto 30px;
+}
+
+.recent-matches-section {
+  max-width: 1000px;
+  margin: 35px auto 0;
+}
+
+.recent-matches-section h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.recent-matches-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.team-error {
+  padding: 25px;
+  text-align: center;
+}
+
+.team-error button {
+  padding: 10px 20px;
+  border: 0;
+  border-radius: 6px;
+  background-color: white;
+  color: #a4261d;
+}
+
+@media (max-width: 768px) {
+  .recent-matches-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .team-banner {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-matches-container {
+    padding: 15px 12px 35px;
+  }
+
+  .recent-matches-list {
+    grid-template-columns: 1fr;
+  }
+}
